@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resizable</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div class="resizable" data-direction="horizontal">
+        <div class="children text" data-space="1" data-min-size="50">
+          <p>1</p>
+        </div>
+        <div class="handler-container">
+          <div class="handler visible"></div>
+        </div>
+        <div class="children text" data-space="1" data-min-size="50">
+          <p>2</p>
+        </div>
+        <div class="handler-container">
+          <div class="handler visible"></div>
+        </div>
+        <div class="children" data-space="1" data-min-size="50">
+          <div class="resizable" data-direction="vertical">
+            <div class="children text" data-space="2" data-min-size="50">
+              <p>3</p>
+            </div>
+            <div class="handler-container">
+              <div class="handler"></div>
+            </div>
+            <div class="children text" data-space="1" data-min-size="50">
+              <p>4</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="const.js"></script>
+    <script src="utils.js"></script>
+    <script src="init.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
