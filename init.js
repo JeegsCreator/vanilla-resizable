@@ -23,7 +23,7 @@ function initSize($childrens, totalSpaces, resizeDirection) {
     );
 
     // apply init heigth from data-space
-    const childrenSpace = Number($children.dataset.space);
+    const childrenSpace = Number($children.dataset.space ?? 1);
     const childrenNewSize = (100 / totalSpaces) * childrenSpace;
 
     $children.style[DIRECTION_ATTRIBUTE_NAMES[resizeDirection].minSize] =

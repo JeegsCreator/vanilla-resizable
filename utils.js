@@ -90,7 +90,7 @@ function getResizeDirection($parent) {
 function getTotalSpaces($childrens) {
   let totalSpaces = 0;
   $childrens.forEach(
-    ($children) => (totalSpaces += Number($children.dataset.space)),
+    ($children) => (totalSpaces += Number($children.dataset.space ?? 1)),
   );
 
   return totalSpaces;
